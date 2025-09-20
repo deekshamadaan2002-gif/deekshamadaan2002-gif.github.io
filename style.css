@@ -206,6 +206,39 @@ a:hover {
   font-size: 1.1rem;
 }
 
+/* CERTIFICATIONS */
+.certifications {
+  padding: 100px 10%;
+  background: #111;
+  width: 100%;
+  box-sizing: border-box;
+}
+.certifications h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2.5rem;
+  color: #fff;
+}
+.certifications-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+.cert-card {
+  background: #151515;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 5px 20px rgba(0, 212, 255, 0.1);
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+.cert-card.pop-out {
+  transform: scale(1.05) translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 212, 255, 0.3);
+}
+.cert-card h3 {
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
 /* EDUCATION */
 .education {
   padding: 100px 10%;
@@ -326,5 +359,6 @@ footer {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   margin-top: auto;
 }
+
 
 /* FADE-IN AND POP
